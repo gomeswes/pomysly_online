@@ -1,0 +1,188 @@
+@CHARSET "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+@import 'https://fonts.googleapis.com/css?family=Hind';
+@import 'https://fonts.googleapis.com/css?family=Yantramanav';
+/*@font-face
+{
+	font-family: constan;
+	src:url(../media/desktop/constan.eot);
+	src:url(../media/desktop/constan.ttf) format("truetype");
+}*/
+
+html
+{
+	background:url(tlo.gif);
+	font-size:10pt;
+	font-family: 'Yantramanav', sans-serif;
+}
+body
+{
+	margin:0px;
+	background:inherit;
+	font-size:10pt;
+	font-family: 'Yantramanav', sans-serif;
+/*font-family: 'Poppins', sans-serif;*/
+}
+div
+{
+	font-family: 'Yantramanav', sans-serif;
+}
+img
+{
+	border:0px;
+	margin:0px;
+}
+p
+{
+	margin:0px;
+	padding:0px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* lightbox */
+/* ------------------------------------------------------------------------- */
+#likebox_1
+{
+  z-index: 10005;
+	border:2px solid #3c95d9;
+	background-color: #fff;
+	width:196px;
+	height: 353px;
+	position: fixed;
+	top: 18%;
+	right: -200px;
+}
+#likebox_1_1
+{
+	width:196px;
+	height: 353px;
+	overflow: hidden;
+}
+#likebox_1 img
+{
+	position: absolute; 
+	top: -2px; 
+	left: -35px; 
+	cursor: pointer;
+}
+#likebox_1 iframe
+{
+	border:0px solid #3c95d9;
+	overflow: hidden; 
+	position: static;
+	height: 360px;
+	left:-2px;
+  top:-3px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* szablony -> dodatkiprzedstrona i dodatkipodstrona */
+/* ------------------------------------------------------------------------- */
+div.naglowekdlarobotow 
+{
+	display:none;
+}
+
+/* ------------------------------------------------------------------------- */
+/* szablony */
+/* ------------------------------------------------------------------------- */
+div.bialygornypasek
+{
+	position:absolute;
+	top:0px;
+	background:white;
+	height:90px;
+	width:100%;	
+	z-index:0;
+}
+div.nazwafirmy
+{
+	position:relative;
+	width:300px;
+	margin:auto;
+	background:none;
+	color:#614848;
+	text-align:center;
+	font-size:28px;
+	font-family: 'Hind', sans-serif;
+	letter-spacing:4px;
+	padding-top:10px;
+	
+}
+div.menu
+{
+	width:500px;
+	height:42px;
+	margin:auto;
+	overflow:hidden;
+	position:relative;
+	margin-top:15px;
+}
+div.menustart
+{
+	width:24px;
+	height:42px;
+	background:url(tlomenustart.png);
+	background-repeat:no-repeat;
+	float:left;
+}
+div.menumiddle
+{
+	width:452px;
+	height:42px;
+	background:url(tlomenu.png);
+	float:left;
+	text-align:center;
+	color:white;
+	font-family: 'Hind', sans-serif;
+	font-size:20px;
+}
+div.menustop
+{
+	width:21px;
+	height:42px;
+	background:url(tlomenukoniec.png);
+	background-repeat:no-repeat;
+	float:left;
+}
+div.menuodstep
+{
+	padding-top:5px;
+}
+a.menuglowne
+{
+	color:white;
+	font-family: 'Hind', sans-serif;
+	text-decoration:none;
+}
+div.separatormenu
+{
+	display:inline-block;
+	padding-left:25px;
+	padding-right:25px;
+}
+div.stopka
+{
+	position:fixed;
+	width:1050px;
+	text-align:center;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight:100;
+	color:#626262;
+	margin:auto;
+	bottom:10px;
+	width:100%;
+}
+a.stopka
+{
+	font-family: 'Yantramanav', sans-serif;
+	font-weight:100;
+	color:#626262;
+	text-decoration:none;
+}
+
+div.srodek
+{
+	width:1050px;
+	margin:auto;
+}
