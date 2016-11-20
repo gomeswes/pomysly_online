@@ -21,7 +21,44 @@
 </head>
 <body>
 
+<div class="bialygornypasek"></div>
+
+<div class="nazwafirmy">Pomysly.online</div>
+
+<div id="menu">
+  <div class='menu'>
+         <div class='menustart'></div>
+         <div class='menumiddle'>
+           <div class='menuodstep'>
+             <a href='.' class='menuglowne'>Strona główna</a>
+             <div class='separatormenu'>|</div>
+             <a href='products' class='menuglowne'>Produkty</a>
+             <div class='separatormenu'>|</div>
+             <a href='staticpages,index,pokaz,kontakt' class='menuglowne'>Kontakt</a>
+           </div>
+         </div>
+         <div class='menustop'></div>
+     </div>
+</div>
+
 <%= yield %>
+
+<div class="stopka">
+	<div>Wszelke prawa zastrzeżone dla Terrabit Janusz Hess. Projekt i realizacja 
+		<a href="http://www.drukarnia.infopres.pl" onclick="window.open(&quot;http://www.drukarnia.infopres.pl&quot;,&quot;chaild&quot;);return false;" class="stopka">
+				www.drukarnia.infopres.pl</a>
+	</div>
+</div>
+
+<div id="cookieinfo" class="cookieinfo">
+	<div class="cookieinfowarstwanosna" style="display:none;">
+		<div class="cookieinfowarstwatekstu">
+			Używamy cookies m.in. w celach zapewnienia maksymalnej wygody użytkowników przy korzystaniu z naszej strony (zapamiętywanie preferencji i ustawień na naszych stronach, zbieranie anonimowych danych dla celów statystycznych). Korzystanie z witryny bez zmiany
+			ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Pamiętaj, że zawsze możesz zmienić te ustawienia.
+		</div>
+		<img src="/assets/zamknij.png" alt="" class="cookieinfozamknij" onclick="document.getElementById(&quot;cookieinfo&quot;).style.display=&quot;none&quot;;setCookie(&quot;cookieinfo&quot;,&quot;potwierdzone&quot;,365);" />
+	</div>
+</div>
 
 </body>
 </html>
