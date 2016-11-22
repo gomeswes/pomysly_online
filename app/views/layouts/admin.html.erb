@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PomyslyOnline</title>
+  <%= stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track' => true %>
+  <!--<%= stylesheet_link_tag    'admin', assets: 'admin', 'data-turbolinks-track' => true %>-->
+  
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="pl" />
+	<meta name="Description" content="" />
+	<meta name="Keywords" content="" />
+	<meta name="rating" content="" />
+	<meta name="Author" content="Rafał Oleśkowicz" />
+	<meta name="Revisit-after" content="1 Day" />
+	<meta name="robots" content="index,follow" />
+	<meta http-equiv="Reply-To" content="rafal@labnode.org" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="Creation-Date" content="Cz, 15 lis 2012 12:14:37 +0100" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+<div class='loginodstepgorny'></div>
+										<div class='center'>
+											<img src='./assets/admin/tytul.gif' alt='Panel administracyjny' /> <br />
+											<img src='./assets/admin/liniapozioma.gif' alt='Linia pozioma' /> <br />
+											<form method='post' action='login,admin,zaloguj'>
+												<table style='width:700px;margin:auto;margin-top:40px;margin-bottom:40px;'>
+													<tr><td style='text-align:right;'><img src='./assets/admin/login.gif' alt='login' /></td><td style='text-align:center;'><input type='text' name='r_login' value='login' style='width:412px;height:53px;background:url(./assets/admin/tlopola.gif);border:0px;text-align:center;font-size:28px;padding:0px;' onclick='this.value=="login"?this.value="":null'/></td></tr>
+													<tr style='line-height:5px;'><td style='text-align:right;'>&#160;</td><td style='text-align:center;'>&#160;</td></tr>
+													<tr><td style='text-align:right;'><img src='./assets/admin/haslo.gif' alt='hasło' /></td><td style='text-align:center;'><input type='password' name='r_haslo' value='hasło' style='width:412px;height:53px;background:url(./assets/admin/tlopola.gif);border:0px;text-align:center;font-size:28px;padding:0px;' onclick='this.value=="hasło"?this.value="":null'/></td></tr>
+												</table>
+												<img src='./assets/admin/liniapozioma.gif' alt='Linia pozioma' /> <br />
+												<br />
+												<table style='width:800px;margin:auto;'>
+													<tr>
+														<td><img src='./assets/admin/przypomnijhaslo.gif' alt='Przypomnij hasło' /></td>
+														<td><img src='./assets/admin/liniapionowa.gif' alt='' /></td>
+														<td><input type='submit' name='' value='' style='width:248px;height:72px;background:url(./assets/admin/zaloguj.gif);border:0px;cursor:hand;cursor:pointer;'/></td>
+													</tr>
+												</table>
+											</form>
+										</div>
+										<%= yield %>
+										</body>
+</html>
