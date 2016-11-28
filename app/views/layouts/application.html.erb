@@ -1,66 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PomyslyOnline</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag    'index', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag    'strona', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
-	<meta http-equiv="Content-Language" content="pl" />
-	<meta name="Description" content="" />
-	<meta name="Keywords" content="" />
-	<meta name="rating" content="" />
-	<meta name="Author" content="Rafał Oleśkowicz" />
-	<meta name="Revisit-after" content="1 Day" />
-	<meta name="robots" content="index,follow" />
-	<meta http-equiv="Reply-To" content="rafal@labnode.org" />
-	<meta http-equiv="pragma" content="no-cache" />
-	<meta http-equiv="cache-control" content="no-cache" />
-	<meta http-equiv="Creation-Date" content="Cz, 15 lis 2012 12:14:37 +0100" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<body>
-
-<div class="bialygornypasek"></div>
-
-<div class="nazwafirmy">Pomysly.online</div>
-
-<div id='menu'>
-  <div class='menu'>
-  	<div class='menustart'></div>
-  	<div class='menumiddle'>
-    	<div class='menuodstep'>
-      	<a href='.' class='menuglowne'>Strona główna</a>
-        <div class='separatormenu'>|</div>
-        <a href='products' class='menuglowne'>Produkty</a>
-        <div class='separatormenu'>|</div>
-        <a href='contact' class='menuglowne'>Kontakt</a>
-    	</div>
-  	</div>
-    <div class='menustop'></div>
-	</div>
-</div>
-     
-<%= yield %>
-
-<div class="stopka">
-	<div>Wszelke prawa zastrzeżone dla Terrabit Janusz Hess. Projekt i realizacja 
-		<a href="http://www.drukarnia.infopres.pl" onclick="window.open(&quot;http://www.drukarnia.infopres.pl&quot;,&quot;chaild&quot;);return false;" class="stopka">
-				www.drukarnia.infopres.pl</a>
-	</div>
-</div>
-
-<div id="cookieinfo" class="cookieinfo">
-	<div class="cookieinfowarstwanosna" style="display:none;">
-		<div class="cookieinfowarstwatekstu">
-			Używamy cookies m.in. w celach zapewnienia maksymalnej wygody użytkowników przy korzystaniu z naszej strony (zapamiętywanie preferencji i ustawień na naszych stronach, zbieranie anonimowych danych dla celów statystycznych). Korzystanie z witryny bez zmiany
-			ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Pamiętaj, że zawsze możesz zmienić te ustawienia.
-		</div>
-		<img src="/assets/zamknij.png" alt="" class="cookieinfozamknij" onclick="document.getElementById(&quot;cookieinfo&quot;).style.display=&quot;none&quot;;setCookie(&quot;cookieinfo&quot;,&quot;potwierdzone&quot;,365);" />
-	</div>
-</div>
-
-</body>
+	<head>
+	  <title>PomyslyOnline</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= stylesheet_link_tag    'index', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= stylesheet_link_tag    'strona', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="pl" />
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="" />
+		<meta name="rating" content="" />
+		<meta name="Author" content="Rafał Oleśkowicz" />
+		<meta name="Revisit-after" content="1 Day" />
+		<meta name="robots" content="index,follow" />
+		<meta http-equiv="Reply-To" content="rafal@labnode.org" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="Creation-Date" content="Cz, 15 lis 2012 12:14:37 +0100" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	
+	<body>
+		<div class="bialygornypasek"></div>
+		<div class="nazwafirmy">Pomysly.online</div>
+		<%= render 'layouts/menu' %>
+		<%= yield %>
+		<%= render 'layouts/stopka' %>
+		<%= render 'layouts/cookie' %>
+	</body>
 </html>
